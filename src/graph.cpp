@@ -55,6 +55,17 @@ void Graph::draw(NVGcontext *ctx) {
         nvgFill(ctx);
     }
 
+    if (!m_vertical_bars.empty()) {
+        for (size_t i = 0; i < (size_t) m_vertical_bars.size(); i++) {
+            float vx = m_pos.x() + m_vertical_bars[i] * m_size.x() / (float) (m_values.size() - 1);
+            nvgBeginPath(ctx);
+            nvgMoveTo(ctx, vx, m_pos.y());
+            nvgLineTo(ctx, vx, m_pos.y() + m_size.y());
+            nvgStrokeColor(ctx, m_text_color);
+            nvgStroke(ctx);
+        }
+    }
+
     nvgFontFace(ctx, "sans");
 
     if (!m_caption.empty()) {

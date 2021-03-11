@@ -1045,6 +1045,8 @@ static const char *__doc_nanogui_Graph_m_text_color = R"doc()doc";
 
 static const char *__doc_nanogui_Graph_m_values = R"doc()doc";
 
+static const char *__doc_nanogui_Graph_m_vertical_bars = R"doc()doc";
+
 static const char *__doc_nanogui_Graph_preferred_size = R"doc()doc";
 
 static const char *__doc_nanogui_Graph_set_background_color = R"doc()doc";
@@ -1063,6 +1065,8 @@ static const char *__doc_nanogui_Graph_set_text_color = R"doc()doc";
 
 static const char *__doc_nanogui_Graph_set_values = R"doc()doc";
 
+static const char *__doc_nanogui_Graph_set_vertical_bars = R"doc()doc";
+
 static const char *__doc_nanogui_Graph_stroke_color = R"doc()doc";
 
 static const char *__doc_nanogui_Graph_text_color = R"doc()doc";
@@ -1070,6 +1074,10 @@ static const char *__doc_nanogui_Graph_text_color = R"doc()doc";
 static const char *__doc_nanogui_Graph_values = R"doc()doc";
 
 static const char *__doc_nanogui_Graph_values_2 = R"doc()doc";
+
+static const char *__doc_nanogui_Graph_vertical_bars = R"doc()doc";
+
+static const char *__doc_nanogui_Graph_vertical_bars_2 = R"doc()doc";
 
 static const char *__doc_nanogui_GridLayout = R"doc()doc";
 

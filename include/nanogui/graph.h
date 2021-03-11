@@ -50,12 +50,17 @@ public:
     std::vector<float> &values() { return m_values; }
     void set_values(const std::vector<float> &values) { m_values = values; }
 
+    const std::vector<int> &vertical_bars() const { return m_vertical_bars; }
+    std::vector<int> &vertical_bars() { return m_vertical_bars; }
+    void set_vertical_bars(const std::vector<int> &indices) { m_vertical_bars = indices; }
+
     virtual Vector2i preferred_size(NVGcontext *ctx) const override;
     virtual void draw(NVGcontext *ctx) override;
 protected:
     std::string m_caption, m_header, m_footer;
     Color m_background_color, m_fill_color, m_stroke_color, m_text_color;
     std::vector<float> m_values;
+    std::vector<int> m_vertical_bars;
 };
 
 NAMESPACE_END(nanogui)
